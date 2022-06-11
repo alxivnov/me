@@ -1,0 +1,21 @@
+DefaultType application/pkcs7-mime
+
+ExpiresActive Off
+ExpiresByType image/png M2592000
+ExpiresByType image/svg+xml M2592000
+ExpiresByType image/jpeg M2592000
+
+ExpiresByType text/css M2592000
+ExpiresByType application/javascript M2592000
+ExpiresByType application/x-javascript M2592000
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript

@@ -1,0 +1,129 @@
+<html>
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<!--
+    <META NAME="keywords" CONTENT="1gb.ru хостинг">
+    <META NAME="description" CONTENT="Эта страница генерируется автоматически при создании сайта в системе хостинга 1gb.ru">
+-->
+    <title>{{ json.trackName }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="apple-itunes-app" content="app-id={{ a }}, affiliate-data=1l3voBu">
+
+    <meta property="fb:app_id" content="323189601445394">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ name }}" />
+    <meta property="og:description" content="{{ subtitle }}">
+    <meta property="og:image" content="{{ image }}">
+    <meta property="og:url" content="https://apptag.me/?a={{ a }}">
+
+    <meta property="og:site_name" content="{{ name }}">
+
+    <meta property="al:ios:url" content="{{ schema }}:" />
+    <meta property="al:ios:app_store_id" content="{{ a }}" />
+    <meta property="al:ios:app_name" content="{{ name }}" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+<style>
+  body {font-family: Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial; font-weight: lighter;}
+  h1 {font-weight: lighter; font-size: 100;}
+  h2 {font-weight: lighter;}
+  a {font-weight: lighter;}
+  p {font-weight: light; margin: 8px 20%; text-align: justify;}
+</style>
+</head>
+
+<body>
+  <header class="border-bottom">
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href=".."><strong>a ~ p ~ p ~ t ~ a ~ g</strong></a>
+
+      <a class="btn btn-success" href="https://itunes.apple.com/developer/alexander-ivanov/id734258593?mt=8">App Store</a>
+    </nav>
+  </header>
+
+  <center id="app">
+    <br/>
+    <br/>
+    <br/>
+    <a :href="url">
+      <img :src="image" style="border-radius: 24%;" />
+    </a>
+    <h1>{{ name }}</h1>
+    <h2>{{ subtitle }}</h2>
+  <br/>
+  <br/>
+  <br/>
+    <a :href="url" style="display:inline-block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+    {{ json.description }}
+  </center>
+  <script src="https://unpkg.com/vue@next"></script>
+
+
+  <script src="https://alxivnov.github.io/vue-compiler/vue-compiler.js"></script>
+
+    <script>
+      let comp = [
+        'https://alxivnov.github.io/vue-compiler/btn.vue',
+        'https://alxivnov.github.io/vue-compiler/nav-link.vue',
+        'https://alxivnov.github.io/vue-compiler/navbar.vue',
+
+    'https://alxivnov.github.io/vue-compiler/card.vue',
+    'https://alxivnov.github.io/vue-compiler/card-body.vue',
+    'https://alxivnov.github.io/vue-compiler/card-img.vue'
+    ];
+
+      let opts = {
+        el: '#app',
+        data: {
+          json: {}
+        },
+		computed: {
+			id() {
+				return window.location.hash.substring(1);
+			},
+			url() {
+				return this.id && `https://itunes.apple.com/app/apple-store/id${this.id}?at=1l3voBu&ct=apptag&pt=10603809&mt=8`;
+			},
+			lookupURL() {
+				return this.id && `./${this.id}.json`;//`https://itunes.apple.com/lookup?id=${this.id}`;
+			},
+			array() {
+				return this.json && this.json.trackName && this.json.trackName.split(' - ');
+			},
+			name() {
+				return this.array && this.array[0];
+			},
+			subtitle() {
+				return this.array && this.array[1];
+			},
+			image() {
+				return this.json && this.json.artworkUrl100 && this.json.artworkUrl100.replace('100x100', '200x200');
+			},
+			schema() {
+				return this.name && this.name.replace(' ', '').toLowerCase();
+			}
+		},
+        mounted() {
+			console.log(this.lookupURL);
+        	fetch(this.lookupURL)
+				.then(res => res.json())
+				.then(json => {
+					console.log(json);
+
+					this.json = json.results[0]
+				});
+        }
+      };
+
+      VueCompiler.createApp(opts, comp, { cache: true, async: /\.vue$|(?:^|\/)vue\//g });
+    </script>
+</body>
+</html>

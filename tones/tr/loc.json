@@ -1,0 +1,83 @@
+{
+	"header": "How to set a song as an iPhone tone?",
+	"button": "App Store'dan İndirin",
+	"panels":  [
+		{
+			"header": "1. Seçtiğiniz parçanın 40 saniye ya da daha kısa bir kopyasını olusturun.",
+			"labels": [
+				"a. Parçanızı iTunes uzerinden bulun ve içerik menüsünden (sağ tıklama) Parça Bilgisini seçin.",
+				"b. Seçenekler sekmesine gelip Başlat ve Durdur zamanlarını seçip Tamam düğmesini tıklayın.",
+				"c. iTunes menüsünden Dosya ögesini seçin, Dönüştür alt menüsü içerisinden ACC Sürümünü Yarat ögesini tıklayın.",
+				"d. Seçtiğiniz parçanın bir kopyası oluşacaktır. Oluşan parçanın içerik menüsünden Finder'da Gösteri tıklayarak dosyanın bulunduğu dizine gidiniz."
+			],
+			"images": [
+				{
+					"title": "Parçanızı iTunes uzerinden bulun ve içerik menüsünden (sağ tıklama) Parça Bilgisini seçin.",
+					"alt": "Open song's properties"
+				},
+				{
+					"title": "Seçenekler sekmesine gelip Başlat ve Durdur zamanlarını seçip Tamam düğmesini tıklayın.",
+					"alt": "Set start and end of the ringtone"
+				},
+				{
+					"title": "iTunes menüsünden Dosya ögesini seçin, Dönüştür alt menüsü içerisinden ACC Sürümünü Yarat ögesini tıklayın.",
+					"alt": "Create a copy of the song in AAC format"
+				},
+				{
+					"title": "Seçtiğiniz parçanın bir kopyası oluşacaktır. Oluşan parçanın içerik menüsünden Finder'da Gösteri tıklayarak dosyanın bulunduğu dizine gidiniz.",
+					"alt": "Find ringtone in Finder"
+				}
+			]
+		},
+		{
+			"header": "2. Dosyanın \"mp4\" tipine dönüştürülmesi ve iPhone'a yüklenmesi.",
+			"labels": [
+				"a. Dizine kopyalanmış parçanın içerik menüsünden (sağ tıklama) Bilgi Ver ögesi seçilir.",
+				"b. Açılan ekrandan Ad ve Uzantı kısmı içerisinde ki dosya uzantısını \"m4r\" ile değiştirin ve pencereyi kapatın.",
+				"c. iTunes üzerinden iPhone ögesini seçin ve Ses Tonları menüsüne gidin.",
+				"d. Dizinde kopyalanmış olan dosyayı sürükleyerek Ses Tonlarının içine bırakın."
+			],
+			"images": [
+				{
+					"title": "Dizine kopyalanmış parçanın içerik menüsünden (sağ tıklama) Bilgi Ver ögesi seçilir.",
+					"alt": "Open file properties"
+				},
+				{
+					"title": "Açılan ekrandan Ad ve Uzantı kısmı içerisinde ki dosya uzantısını m4r ile değiştirin ve pencereyi kapatın.",
+					"alt": "Change file extension to m4r"
+				},
+				{
+					"title": "iTunes üzerinden iPhone ögesini seçin ve Ses Tonları menüsüne gidin.",
+					"alt": "Select Ses Tonlari in iTunes"
+				},
+				{
+					"title": "Dizinde kopyalanmış olan dosyayı sürükleyerek Ses Tonlarının içine bırakın.",
+					"alt": "Copy ringtone to iTunes"
+				}
+			]
+		},
+		{
+			"header": "3. iPhone için yeni Ses Tonu ayarlamak.",
+			"labels": [
+				"a. iPhone ya da iPad ayarlarınızı açın.",
+				"b. Ses ve Dokunuş menüsü içerisinden Zil Sesi alanına gelin.",
+				"c. Önceden oluşturduğunuz parçayı Ses Tonunu menuden bulun ve seçin.",
+				"d. Satın Alınan Tüm Tonları İndir tuşuna basın ve işlemi sonlandırın."
+			],
+			"images": [
+				{
+					"title": "iPhone ya da iPad ayarlarınızı açın.",
+					"alt": "Open settings on the iPhone"
+				},
+				{
+					"title": "Ses ve Dokunuş menüsü içerisinden Zil Sesi alanına gelin.",
+					"alt": "Navigate to ringtone selection menu"
+				},
+				{
+					"title": "Önceden oluşturduğunuz parçayı Ses Tonunu menuden bulun ve seçin.",
+					"alt": "Select selected ringtone"
+				}
+			]
+		}
+	]
+}

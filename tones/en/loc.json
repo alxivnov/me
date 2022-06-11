@@ -1,0 +1,110 @@
+{
+	"header": "How to set a song as an iPhone tone?",
+	"button": "Download on the App Store",
+	"panels":  [
+		{
+			"header": "1. Create a copy of a song with duration 40 seconds or less.",
+			"labels": [
+				"a. Find the song in the iTunes and select Get Info in its context menu.",
+				"b. On the Options tab set the start and the stop time and click OK.",
+				"c. In the iTunes menu select sequentially items File, Convert and Create ACC Version.",
+				"d. A copy of the song will appear, select Show in Finder in its context menu."
+			],
+			"images": [
+				{
+					"title": "Find the song in the iTunes and click select Get Info in its context menu.",
+					"alt": "Open song's properties"
+				},
+				{
+					"title": "On the Options tab set the start and the stop time and click OK.",
+					"alt": "Set start and end of the ringtone"
+				},
+				{
+					"title": "In the iTunes menu select sequentially items File, Convert and Create ACC Version.",
+					"alt": "Create a copy of the song in AAC format"
+				},
+				{
+					"title": "A copy of the song will appear, select Show in Finder in its context menu.",
+					"alt": "Find ringtone in Finder"
+				}
+			]
+		},
+		{
+			"header": "2. Change the file type to \"mp4\".",
+			"labels": [
+				"a. Drag the copy to a folder specifically created for ringtones.",
+				"b. In the context menu of the copy select item Get Info.",
+				"c. Change file extension to \"m4r\" in the appeared window and close it.",
+				"d. Delete the copy form the iTunes Library."
+			],
+			"images": [
+				{
+					"title": "Drag the copy to a folder specifically created for ringtones.",
+					"alt": "Move ringtone to the ringtones folder"
+				},
+				{
+					"title": "In the context menu of the copy select item Get Info.",
+					"alt": "Open file properties"
+				},
+				{
+					"title": "Change file extension to m4r in the appeared window and close it.",
+					"alt": "Change file extension to m4r"
+				},
+				{
+					"title": "Delete the copy form the iTunes.",
+					"alt": "Delete the copy in the iTunes Library"
+				}
+			]
+		},
+		{
+			"header": "3. Import the ringtone to iPhone using iTunes.",
+			"labels": [
+				"a. In a drop-down menu Music in the iTunes select an item Tones.",
+				"b. Drag the ringtone to the iTunes.",
+				"c. Click on the button with image of iPhone or iPad to the right of menu Tones.",
+				"d. On the appeared screen select item Tones on the left, then select checkmark Sync Tones sounds and click Done."
+			],
+			"images": [
+				{
+					"title": "In a drop-down menu Music in the iTunes select an item Tones.",
+					"alt": "Open sounds collection in the iTunes"
+				},
+				{
+					"title": "Drag the ringtone to the iTunes.",
+					"alt": "Drag the ringtone to the iTunes"
+				},
+				{
+					"title": "Click on the button with image of iPhone or iPad to the right of menu Tones.",
+					"alt": "Open the iPhone browser in the iTunes"
+				},
+				{
+					"title": "On the appeared screen select item Tones on the left, then select checkmark Sync Tones sounds and click Done.",
+					"alt": "Synchronize the iPhone with the iTunes"
+				}
+			]
+		},
+		{
+			"header": "4. Set the new ringtone on your iPhone.",
+			"labels": [
+				"a. Open settings on the iPhone or the iPad.",
+				"b. Sequentially select items Sounds and Ringtone.",
+				"c. Then find and select previously created ringtone.",
+				"d. Check out a Purchase button in the top right corner and make conclusions."
+			],
+			"images": [
+				{
+					"title": "Open settings on the iPhone or the iPad.",
+					"alt": "Open settings on the iPhone"
+				},
+				{
+					"title": "Sequentially select items Sounds and Ringtone.",
+					"alt": "Navigate to ringtone selection menu"
+				},
+				{
+					"title": "Then find and select previously created ringtone.",
+					"alt": "Select selected ringtone"
+				}
+			]
+		}
+	]
+}
